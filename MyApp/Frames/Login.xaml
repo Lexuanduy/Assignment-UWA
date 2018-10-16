@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="MyApp.Frames.Login"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp.Frames"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="0.15*" />
+
+            <RowDefinition Height="0.85*" />
+
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="LightBlue">
+
+            <TextBlock Name="Login" Text="Login Form"  
+            TextAlignment="Center" FontSize="30" FontStyle="Italic"  
+            FontWeight="ExtraBlack"></TextBlock>
+
+        </Border>
+
+        <StackPanel x:Name="stackone" Grid.Row="1">
+
+            <TextBox PlaceholderText="Enter Email" Width="300"  
+            Margin="0,50,0,0"></TextBox>
+
+            <TextBox PlaceholderText="Enter Password"  
+            Width="300" Margin="0,10,0,0"></TextBox>
+
+            <RelativePanel HorizontalAlignment="Center"  
+            Margin="0,10,0,0">
+
+                <Button x:Name="loginbtn" Content="Login"  
+                Height="35" Width="65" Click="loginbtn_Click"></Button>
+
+                <Button x:Name="signlbtn" Content="Sign"  
+                Height="35" Width="65" Margin="10,0,0,0"  
+                RelativePanel.RightOf="loginbtn" Click="signlbtn_Click"></Button>
+
+            </RelativePanel>
+
+        </StackPanel>
+
+    </Grid>
+</Page>
