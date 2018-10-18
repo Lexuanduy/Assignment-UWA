@@ -144,6 +144,12 @@ namespace MyApp.Views
 
         private async void Handle_Signup(object sender, TappedRoutedEventArgs e)
         {
+            Dictionary<String, String> LoginInfor = new Dictionary<string, string>();
+            LoginInfor.Add("email", this.Email.Text);
+            LoginInfor.Add("password", this.Password.Password);
+            LoginInfor.Add("Confirm_Password_Message", this.Confirm_Password.Password);
+            LoginInfor.Add("firstName", this.FirstName.Text);
+
 
             this.currentMember.email = Email.Text;
             this.currentMember.password = Password.Password;

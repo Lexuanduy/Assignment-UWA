@@ -12,15 +12,15 @@
         <StackPanel Margin="30, 0, 0, 0" x:Name="ParentStackPanel">
             <RelativePanel>
                 <TextBox x:Name="Email" Margin="0, 30, 0, 0" Header="Email" HorizontalAlignment="Left" Text="" VerticalAlignment="Top" Width="293"/>
-                <TextBlock x:Name="email" RelativePanel.Below="Email"/>
+                <TextBlock x:Name="email" RelativePanel.Below="Email" Foreground="Red"/>
             </RelativePanel>
             <RelativePanel>
                 <PasswordBox x:Name="Password" Margin="0, 30, 0, 0" Header="Password" Width="293" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                <TextBlock x:Name="password" RelativePanel.Below="Password"/>
+                <TextBlock x:Name="password" RelativePanel.Below="Password" Foreground="Red"/>
             </RelativePanel>
             <RelativePanel>
                 <PasswordBox x:Name="Confirm_Password" Margin="0, 30, 0, 0" Header="Confirm Password" Width="293" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                <TextBlock x:Name="Confirm_Password_Message" RelativePanel.Below="Confirm_Password"/>
+                <TextBlock x:Name="Confirm_Password_Message" RelativePanel.Below="Confirm_Password" Foreground="Red"/>
             </RelativePanel>
             <RelativePanel>
                 <TextBox x:Name="FirstName" Margin="0, 30, 0, 0" Header="First Name" HorizontalAlignment="Left" Text="" VerticalAlignment="Top" Width="293"/>

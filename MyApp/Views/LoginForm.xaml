@@ -8,11 +8,11 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <StackPanel>
-        <TextBox x:Name="Email" Header="Email"/>
+    <StackPanel Margin="30, 0, 0, 0">
+        <TextBox x:Name="Email" Margin="0, 30, 0, 0" Header="Email" HorizontalAlignment="Left" Text="" VerticalAlignment="Top" Width="300"/>
         <TextBlock x:Name="email" Foreground="Red" Visibility="Collapsed"/>
-        <PasswordBox x:Name="Password" Header="Password"/>
+        <PasswordBox x:Name="Password" Margin="0, 10, 0, 0" Header="Password" HorizontalAlignment="Left" Width="300"/>
         <TextBlock x:Name="password" Foreground="Red" Visibility="Collapsed"/>
-        <Button x:Name="BtnLogin" Content="Login" Click="BtnLogin_Click"/>
+        <Button x:Name="BtnLogin" Margin="0, 10, 0, 0" Content="Login" Click="BtnLogin_Click"/>
     </StackPanel>
 </Page>
