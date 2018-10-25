@@ -104,6 +104,9 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\ApiHandle.cs" />
+    <Compile Include="Views\ListSong.xaml.cs">
+      <DependentUpon>ListSong.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ListViewDemo.xaml.cs">
       <DependentUpon>ListViewDemo.xaml</DependentUpon>
     </Compile>
@@ -147,6 +150,10 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ListSong.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ListViewDemo.xaml">
       <SubType>Designer</SubType>

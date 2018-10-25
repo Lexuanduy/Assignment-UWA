@@ -149,7 +149,10 @@ namespace MyApp.Views
             LoginInfor.Add("password", this.Password.Password);
             LoginInfor.Add("Confirm_Password_Message", this.Confirm_Password.Password);
             LoginInfor.Add("firstName", this.FirstName.Text);
-
+            LoginInfor.Add("lastName", this.LastName.Text);
+            LoginInfor.Add("avatar", this.ImageUrl.Text);
+            LoginInfor.Add("phone", this.Phone.Text);
+            LoginInfor.Add("address", this.Address.Text);
 
             this.currentMember.email = Email.Text;
             this.currentMember.password = Password.Password;
